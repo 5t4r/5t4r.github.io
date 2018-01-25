@@ -15,6 +15,53 @@ Author: Ryan Petrich <rpetrich@gmail.com>
 Website: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=AppListDp
 Depiction: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=AppListDp
 
+Package: apt
+Version: 1:0-23
+Priority: required
+Section: Packaging
+Maintainer: Jay Freeman (saurik) <saurik@saurik.com>
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: apt7
+Conflicts: cydia (<< 1.0.2843-1)
+Architecture: iphoneos-arm
+Filename: Files//apt/apt_1-0-23_iphoneos-arm.deb
+Size: 686
+Installed-Size: 12
+MD5sum: c26a27bdd7e7edbc496ed16aafcdf408
+Description: any advanced packaging tool from Debian
+Name: APT 0.6 Transitional
+
+Package: apt7
+Version: 0.7.25.3-8
+Priority: standard
+Section: Packaging
+Maintainer: Jay Freeman (saurik) <saurik@saurik.com>
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: apt7-key, apt7-lib (>= 0.7.25.3-7), berkeleydb
+Replaces: apt (<< 1:0-1)
+Architecture: iphoneos-arm
+Filename: Files//apt/apt7_0.7.25.3-8_iphoneos-arm.deb
+Size: 252966
+Installed-Size: 1072
+MD5sum: da65a91675bcde5f9174d8fb6e1669ed
+Description: the advanced packaging tool from Debian
+Name: APT 0.7 Strict
+
+Package: berkeleydb
+Version: 4.6.21-5
+Priority: standard
+Section: Data_Storage
+Maintainer: Jay Freeman (saurik) <saurik@saurik.com>
+Pre-Depends: dpkg (>= 1.14.25-8)
+Architecture: iphoneos-arm
+Filename: Files//apt/berkeleydb_4.6.21-5_iphoneos-arm.deb
+Size: 483432
+Installed-Size: 1704
+MD5sum: d5538a770babf6adeb6f637c640fbcee
+Description: Oracle's embeddable database engine
+Name: Berkeley DB
+Homepage: http://www.oracle.com/technology/products/berkeley-db/index.html
+
 Package: com.conradkramer.open
 Version: 1.1.1-1
 Section: System
@@ -29,6 +76,20 @@ Name: Open
 Author: Conrad Kramer <support@kramerapps.com>
 Website: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=openData
 Depiction: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=openData
+
+Package: com.ericasadun.utilities
+Version: 1:0.4.2
+Section: Utilities
+Maintainer: Erica Sadun <apptapp@ericasadun.com>
+Architecture: iphoneos-arm
+Filename: Files//tools/com.ericasadun.utilities.deb
+Size: 55410
+MD5sum: 89a3bb9791c2deee6f530773089ee43d
+Description: A collection of command-line utilities for various purposes.
+Name: Erica Utilities
+Author: Erica Sadun <apptapp@ericasadun.com>
+Homepage: http://modmyi.com/info/ericautilities.php
+Depiction: http://modmyi.com/info/ericautilities.d.php
 
 Package: com.lz.lzupdate
 Version: 0.0.2-6+debug
