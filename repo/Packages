@@ -14,15 +14,15 @@ Website: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=openData
 Depiction: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=openData
 
 Package: com.lz.lzupdate
-Version: 0.0.2-3+debug
+Version: 0.0.2-5+debug
 Section: System
 Maintainer: lz
-Depends: 
+Depends: jetslammed, com.conradkramer.open, mobilesubstrate, preferenceloader
 Architecture: iphoneos-arm
-Filename: Files//date/com.lz.lzupdate_0.0.2-3+debug_iphoneos-arm.deb
-Size: 22048
+Filename: Files//date/com.lz.lzupdate_0.0.2-5+debug_iphoneos-arm.deb
+Size: 22094
 Installed-Size: 140
-MD5sum: 5351a3ee6d212cc93b753ee5f9c2ef92
+MD5sum: 18462ecfee8642c47acb2ee650e47b23
 Description: An awesome tool of update!!
 Name: lzupdate
 Author: lz
