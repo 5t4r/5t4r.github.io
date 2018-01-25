@@ -1,3 +1,20 @@
+Package: applist
+Version: 1.5.13
+Section: System
+Maintainer: Ryan Petrich <rpetrich@gmail.com>
+Depends: mobilesubstrate (>= 0.9.5000), firmware (>= 3.0), com.rpetrich.rocketbootstrap (>= 1.0.3) | firmware (<< 7.0)
+Conflicts: com.a3tweaks.polus (<< 2.0.7)
+Architecture: iphoneos-arm
+Filename: Files//reveal2loader/applist_1.5.13_iphoneos-arm.deb
+Size: 145960
+Installed-Size: 600
+MD5sum: a246635d6757f54e1e460ef675f14a8e
+Description: Allow extensions to read the list of installed apps
+Name: AppList
+Author: Ryan Petrich <rpetrich@gmail.com>
+Website: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=AppListDp
+Depiction: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=AppListDp
+
 Package: com.conradkramer.open
 Version: 1.1.1-1
 Section: System
@@ -27,6 +44,23 @@ Description: An awesome tool of update!!
 Name: lzupdate
 Author: lz
 
+Package: com.officialscheduler.mterminal
+Version: 1.4-5
+Section: Utilities
+Maintainer: BigBoss <bigboss@thebigboss.org>
+Depends: firmware (>= 4.0), system-cmds
+Architecture: iphoneos-arm
+Filename: Files//tools/com.officialscheduler.mterminal_1.4-5_iphoneos-arm.deb
+Size: 107204
+Installed-Size: 325
+MD5sum: ca89ef2a021eb532ab64a3f584d4c9d4
+Description: A MobileTerminal fork
+Name: MTerminal
+Author: lordscotland <admin@officialscheduler.com>
+Homepage: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=mterminalDp
+Depiction: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=mterminalDp
+Icon: file:///Applications/MTerminal.app/Icon.png
+
 Package: com.pwn20wnd.eraser
 Version: 1.0.3
 Section: System
@@ -38,6 +72,22 @@ MD5sum: cbfd945236a12a7d43f845cca7242002
 Description: A Cydia Eraser replacement. The icon is made by Dennis Bednarz.
 Name: Remover
 Author: pwn20wnd & coolstarorg
+
+Package: com.rpetrich.rocketbootstrap
+Version: 1.0.5
+Section: Tweaks
+Maintainer: BigBoss <bigboss@thebigboss.org>
+Depends: mobilesubstrate (>= 0.9.5000), firmware (>= 3.0)
+Architecture: iphoneos-arm
+Filename: Files//reveal2loader/com.rpetrich.rocketbootstrap_1.0.5_iphoneos-arm.deb
+Size: 49614
+Installed-Size: 504
+MD5sum: 5fc983b20c61ed65e105fcafd6062245
+Description: Support library allowing tweaks to communicate with sandboxed processes
+Name: RocketBootstrap
+Author: Ryan Petrich <rpetrich+rocketbootstrap@gmail.com>
+Homepage: http://rpetri.ch/cydia/rocketbootstrap/
+Depiction: http://rpetri.ch/cydia/rocketbootstrap/
 
 Package: com.saurik.substrate.safemode
 Version: 0.9.6001
@@ -56,6 +106,42 @@ Description: safe mode safety extension (safe)
 Name: Substrate Safe Mode
 Author: Jay Freeman (saurik) <saurik@saurik.com>
 Depiction: http://cydia.saurik.com/info/com.saurik.substrate.safemode/
+
+Package: com.zidaneno5.extensionlist
+Version: 1.0-1
+Section: Development
+Maintainer: BigBoss <bigboss@thebigboss.org>
+Depends: firmware (>= 8.0), mobilesubstrate, com.rpetrich.rocketbootstrap
+Conflicts: com.a3tweaks.polus (<< 2.0.7)
+Architecture: iphoneos-arm
+Filename: Files//reveal2loader/com.zidaneno5.extensionlist_1.0-1_iphoneos-arm.deb
+Size: 69858
+Installed-Size: 536
+MD5sum: 978cd034b3bbb719f511b7b8b832cc63
+Description: Provide a list of App Extensions.
+Name: ExtensionList
+Author: duyongchao <duyongchao.h@gmail.com>
+Homepage: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=extensionlistDp
+Depiction: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=extensionlistDp
+
+Package: com.zidaneno5.reveal2loader
+Version: 1.0-1
+Section: Development
+Maintainer: BigBoss <bigboss@thebigboss.org>
+Depends: firmware (>= 8.0), mobilesubstrate, applist, preferenceloader, com.zidaneno5.extensionlist
+Conflicts: com.rheard.rhrevealloader, com.rheard.reveal-loader
+Replaces: com.rheard.rhrevealloader, com.rheard.reveal-loader
+Architecture: iphoneos-arm
+Filename: Files//reveal2loader/com.zidaneno5.reveal2loader_1.0-1_iphoneos-arm.deb
+Size: 781548
+Installed-Size: 4479
+MD5sum: 8fcc1ceeb72717e823093e38367114d7
+Description: loads Reveal server framework into apps
+Name: Reveal2Loader
+Author: duyongchao <duyongchao.h@gmail.com>
+Homepage: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=reveal2loaderDp
+Depiction: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=reveal2loaderDp
+Icon: file:///Library/PreferenceLoader/Preferences/reveal-logo@2x.png
 
 Package: cydia
 Version: 1.1.30
@@ -231,4 +317,18 @@ Size: 112174
 Installed-Size: 804
 MD5sum: 840a1f34e5d58f8da8b1af28159cf36a
 Description: at-a-glance process watching tool
+
+Package: vim
+Version: 7.1-3p
+Priority: standard
+Section: Text_Editors
+Maintainer: Jay Freeman (saurik) <saurik@saurik.com>
+Depends: ncurses
+Architecture: iphoneos-arm
+Filename: Files//tools/vim.deb
+Size: 6360714
+Installed-Size: 20876
+MD5sum: 0196c5c8759cd6ab26a38b9264d3be72
+Description: the best syntax highlighter, ever
+Name: Vi IMproved
 
