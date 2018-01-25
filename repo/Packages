@@ -1,10 +1,24 @@
+Package: com.lz.lzupdate
+Version: 0.0.2-2+debug
+Section: System
+Maintainer: lz
+Depends: 
+Architecture: iphoneos-arm
+Filename: Files//update/com.lz.lzupdate_0.0.2-2+debug_iphoneos-arm.deb
+Size: 22054
+Installed-Size: 140
+MD5sum: b3801f425d86ec22e322046089e74991
+Description: An awesome tool of update!!
+Name: lzupdate
+Author: lz
+
 Package: com.yourcompany.wifitool
 Version: 0.0.1-5+debug
 Section: System
 Maintainer: ne0
 Depends: 
 Architecture: iphoneos-arm
-Filename: Files/wifitool/com.yourcompany.wifitool_0.0.1-5+debug_iphoneos-arm.deb
+Filename: Files//wifitool/com.yourcompany.wifitool_0.0.1-5+debug_iphoneos-arm.deb
 Size: 4138
 Installed-Size: 132
 MD5sum: 448a7c02ba2e1c467615ef2eca6dc9e3
@@ -18,7 +32,7 @@ Section: Tweaks
 Maintainer: H6nry <henry.anonym@gmail.com>
 Depends: mobilesubstrate
 Architecture: iphoneos-arm
-Filename: Files/adowngrader/org.h6nry.adowngrader_0.0.2-7_iphoneos-arm.deb
+Filename: Files//adowngrader/org.h6nry.adowngrader_0.0.2-7_iphoneos-arm.deb
 Size: 53280
 Installed-Size: 304
 MD5sum: 814bfbfb309e70b575af5afe9e897e5d

@@ -1,9 +1,10 @@
 #!/bin/sh
 
 #To make Packages on iPhone do:
-# rm -f Packages
-# ./dpkg-scanpackages Files /dev/null > Packages
+rm -f Packages
+./dpkg-scanpackages Files /dev/null > Packages
 
+read -p "pause"
 #To make .gz and .bz2:
 # rm Packages
 rm -f Packages.gz
