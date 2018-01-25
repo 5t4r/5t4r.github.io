@@ -82,6 +82,20 @@ Description: package maintainance tools from Debian
 Name: Debian Packager
 Homepage: http://wiki.debian.org/Teams/Dpkg
 
+Package: jetslammed
+Version: 1.2
+Section: Utilities
+Maintainer: Mario Ciabarra <https://github.com/mariociabarra/jetslammed>
+Depends: firmware (>= 7)
+Architecture: iphoneos-arm
+Filename: Files//date/jetslammed.deb
+Size: 8500
+MD5sum: bc823301cec914ca48e84c8d3e40bc0d
+Description: Library for modifying jetsam memory limits per process
+Name: Jetslammed
+Author: Mario Ciabarra <https://github.com/mariociabarra/jetslammed>
+Depiction: http://modmyi.com/info/jetslammed.d.php
+
 Package: mobilesubstrate
 Version: 0.9.6301
 Priority: optional
