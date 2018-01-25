@@ -27,6 +27,18 @@ Description: An awesome tool of update!!
 Name: lzupdate
 Author: lz
 
+Package: com.pwn20wnd.eraser
+Version: 1.0.3
+Section: System
+Maintainer: pwn20wnd
+Architecture: iphoneos-arm
+Filename: Files//tools/cydia_com.pwn20wnd.eraser_1.0.3_iphoneos-arm.deb
+Size: 198180
+MD5sum: cbfd945236a12a7d43f845cca7242002
+Description: A Cydia Eraser replacement. The icon is made by Dennis Bednarz.
+Name: Remover
+Author: pwn20wnd & coolstarorg
+
 Package: com.saurik.substrate.safemode
 Version: 0.9.6001
 Priority: optional
