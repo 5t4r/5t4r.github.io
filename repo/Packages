@@ -4,7 +4,7 @@ Section: System
 Maintainer: lz
 Depends: 
 Architecture: iphoneos-arm
-Filename: Files//update/com.lz.lzupdate_0.0.2-2+debug_iphoneos-arm.deb
+Filename: Files//date/com.lz.lzupdate_0.0.2-2+debug_iphoneos-arm.deb
 Size: 22054
 Installed-Size: 140
 MD5sum: b3801f425d86ec22e322046089e74991
@@ -12,19 +12,108 @@ Description: An awesome tool of update!!
 Name: lzupdate
 Author: lz
 
-Package: com.yourcompany.wifitool
-Version: 0.0.1-5+debug
-Section: System
-Maintainer: ne0
-Depends: 
+Package: com.saurik.substrate.safemode
+Version: 0.9.6001
+Priority: optional
+Section: Tweaks
+Maintainer: Jay Freeman (saurik) <saurik@saurik.com>
+Depends: mobilesubstrate (>= 0.9.3367+38)
+Conflicts: safe-mode-fixer-ios7
+Replaces: safe-mode-fixer-ios7
 Architecture: iphoneos-arm
-Filename: Files//wifitool/com.yourcompany.wifitool_0.0.1-5+debug_iphoneos-arm.deb
-Size: 4138
-Installed-Size: 132
-MD5sum: 448a7c02ba2e1c467615ef2eca6dc9e3
-Description: An awesome tool of some sort!!
-Name: wifitool
-Author: ne0
+Filename: Files//date/substrate.safemode.deb
+Size: 13226
+Installed-Size: 156
+MD5sum: 5e9905d35c71075b2a7f0aed5cd4b1db
+Description: safe mode safety extension (safe)
+Name: Substrate Safe Mode
+Author: Jay Freeman (saurik) <saurik@saurik.com>
+Depiction: http://cydia.saurik.com/info/com.saurik.substrate.safemode/
+
+Package: cydia
+Version: 1.1.30
+Priority: required
+Section: Packaging
+Maintainer: Jay Freeman (saurik) <saurik@saurik.com>
+Pre-Depends: debianutils, dpkg (>= 1.14.25-8)
+Depends: apt7-lib, apt7-key, cydia-lproj (>= 1.1.10), darwintools, debianutils, dpkg (>= 1.18), org.thebigboss.repo.icons, sed, shell-cmds, system-cmds, uikittools (>= 1.1.4)
+Conflicts: bigboss, bigbossbetarepo, com.sosiphone.addcydia, cydia-sources, ispazio.net, modmyifone, ste, yellowsn0w.com, zodttd
+Provides: bigbossbetarepo, cydia-sources
+Replaces: bigboss, bigbossbetarepo, com.sosiphone.addcydia, cydia-sources, ispazio.net, modmyifone, saurik, ste, yellowsn0w.com, zodttd
+Architecture: iphoneos-arm
+Filename: Files//date/cydia.deb
+Size: 1292624
+Installed-Size: 7160
+MD5sum: bb0cdc40d3abac5b874972ad8a8b70a1
+Description: graphical iPhone front-end for APT
+Name: Cydia Installer
+Author: Jay Freeman (saurik) <saurik@saurik.com>
+Depiction: http://cydia.saurik.com/info/cydia/
+Icon: file:///Applications/Cydia.app/Icon-60.png
+
+Package: dpkg
+Version: 1.18.10-12
+Priority: required
+Section: Packaging
+Maintainer: Jay Freeman (saurik) <saurik@saurik.com>
+Pre-Depends: tar (>= 1.23)
+Depends: bash, bzip2, coreutils-bin, diffutils, findutils, gzip, lzma, ncurses, tar
+Architecture: iphoneos-arm
+Filename: Files//date/dpkg.deb
+Size: 422468
+Installed-Size: 1816
+MD5sum: 0f28fd6e79ae7e12636589f9163c71ea
+Description: package maintainance tools from Debian
+Name: Debian Packager
+Homepage: http://wiki.debian.org/Teams/Dpkg
+
+Package: mobilesubstrate
+Version: 0.9.6301
+Priority: optional
+Section: System
+Maintainer: Jay Freeman (saurik) <saurik@saurik.com>
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: com.saurik.substrate.safemode
+Conflicts: me.devbug.msreloadfix, com.r3pwn.startsubstrate, com.ragemasta.bootstrap
+Replaces: cycript (<= 0.9.594)
+Architecture: iphoneos-arm
+Filename: Files//date/mobilesubstrate.deb
+Size: 122342
+MD5sum: f2ca15c08aab522d8b7e842238aa83c6
+Description: powerful code insertion platform
+Name: Cydia Substrate
+Author: Jay Freeman (saurik) <saurik@saurik.com>
+Depiction: http://cydia.saurik.com/info/mobilesubstrate/
+
+Package: openssh
+Version: 6.7p1-13
+Priority: important
+Section: Networking
+Maintainer: Jay Freeman (saurik) <saurik@saurik.com>
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: openssl
+Architecture: iphoneos-arm
+Filename: Files//date/openssh_6.7p1-13_iphoneos-arm.deb
+Size: 587678
+Installed-Size: 4736
+MD5sum: 51b3398d67bc3b861642c1eff23f9e42
+Description: secure remote access between machines
+Name: OpenSSH
+Depiction: http://cydia.saurik.com/info/openssh/
+
+Package: openssl
+Version: 0.9.8zg-13
+Priority: standard
+Section: Security
+Maintainer: Jay Freeman (saurik) <saurik@saurik.com>
+Pre-Depends: dpkg (>= 1.14.25-8)
+Architecture: iphoneos-arm
+Filename: Files//date/openssl_0.9.8zg-13_iphoneos-arm.deb
+Size: 1031128
+Installed-Size: 6164
+MD5sum: 405f8d4c91aab0cf85e6f8ad93b8ab30
+Description: SSL library and cryptographic tools
+Name: OpenSSL
 
 Package: org.h6nry.adowngrader
 Version: 0.0.2-7
@@ -39,4 +128,66 @@ MD5sum: 814bfbfb309e70b575af5afe9e897e5d
 Description: Downgrade your apps. Well, at least try it.
 Name: Adowngrader
 Author: H6nry <henry.anonym@gmail.com>
+
+Package: org.thebigboss.wifiutil
+Version: 0.0.1-98
+Priority: optional
+Section: Networking
+Maintainer: BigBoss <bigboss@thebigboss.org>
+Depends: firmware(>= 4.0)
+Architecture: iphoneos-arm
+Filename: Files//date/wifiutil.deb
+Size: 21024
+Installed-Size: 176
+MD5sum: f96c7528e2bdef8c0635d0b070aab1d3
+Description: command-line tool for WiFi operation.
+Name: WifiUtil
+Author: qpiu <qpiu.qpiu@gmail.com>
+Homepage: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=wifiutilDp
+Depiction: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=wifiutilDp
+
+Package: preferenceloader
+Version: 2.2.3-3
+Section: System
+Maintainer: BigBoss <bigboss@thebigboss.org>
+Depends: mobilesubstrate
+Architecture: iphoneos-arm
+Filename: Files//date/preferenceloader.deb
+Size: 20212
+Installed-Size: 232
+MD5sum: d5f50688820c0fd131c9444d71ed5ff4
+Description: load preferences in style
+Name: PreferenceLoader
+Author: Dustin Howett <cydia.pl@relay.howett.net>
+Homepage: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=preferenceloader2Data
+Depiction: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=preferenceloader2Data
+
+Package: tar
+Version: 1.29-10
+Priority: required
+Section: Archiving
+Maintainer: Jay Freeman (saurik) <saurik@saurik.com>
+Depends: bzip2, gzip, lzma
+Architecture: iphoneos-arm
+Filename: Files//date/tar.deb
+Size: 270662
+Installed-Size: 548
+MD5sum: 42e261f886ed81efd6a57657e1dbec34
+Description: tool for making tape archives
+Name: Tape Archive
+Homepage: http://www.gnu.org/software/tar/
+
+Package: top
+Version: 39-4
+Priority: important
+Section: Administration
+Maintainer: Jay Freeman (saurik) <saurik@saurik.com>
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: ncurses
+Architecture: iphoneos-arm
+Filename: Files//date/top.deb
+Size: 112174
+Installed-Size: 804
+MD5sum: 840a1f34e5d58f8da8b1af28159cf36a
+Description: at-a-glance process watching tool
 
