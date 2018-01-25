@@ -3,7 +3,7 @@ Version: 1.1.1-1
 Section: System
 Maintainer: BigBoss <bigboss@thebigboss.org>
 Architecture: iphoneos-arm
-Filename: Files//date/open.deb
+Filename: Files//open/open.deb
 Size: 3726
 Installed-Size: 194
 MD5sum: d8ee0b6306a356e13c4d9443b5d7ab1a
