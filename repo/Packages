@@ -1,13 +1,28 @@
+Package: com.conradkramer.open
+Version: 1.1.1-1
+Section: System
+Maintainer: BigBoss <bigboss@thebigboss.org>
+Architecture: iphoneos-arm
+Filename: Files//date/com.conradkramer.open_1.1.1-1_iphoneos-arm.deb
+Size: 3726
+Installed-Size: 194
+MD5sum: d8ee0b6306a356e13c4d9443b5d7ab1a
+Description: launch apps from the command-line
+Name: Open
+Author: Conrad Kramer <support@kramerapps.com>
+Website: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=openData
+Depiction: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=openData
+
 Package: com.lz.lzupdate
-Version: 0.0.2-2+debug
+Version: 0.0.2-3+debug
 Section: System
 Maintainer: lz
 Depends: 
 Architecture: iphoneos-arm
-Filename: Files//date/com.lz.lzupdate_0.0.2-2+debug_iphoneos-arm.deb
-Size: 22054
+Filename: Files//date/com.lz.lzupdate_0.0.2-3+debug_iphoneos-arm.deb
+Size: 22048
 Installed-Size: 140
-MD5sum: b3801f425d86ec22e322046089e74991
+MD5sum: 5351a3ee6d212cc93b753ee5f9c2ef92
 Description: An awesome tool of update!!
 Name: lzupdate
 Author: lz
