@@ -1,0 +1,28 @@
+Package: com.yourcompany.wifitool
+Version: 0.0.1-5+debug
+Section: System
+Maintainer: ne0
+Depends: 
+Architecture: iphoneos-arm
+Filename: Files/wifitool/com.yourcompany.wifitool_0.0.1-5+debug_iphoneos-arm.deb
+Size: 4138
+Installed-Size: 132
+MD5sum: 448a7c02ba2e1c467615ef2eca6dc9e3
+Description: An awesome tool of some sort!!
+Name: wifitool
+Author: ne0
+
+Package: org.h6nry.adowngrader
+Version: 0.0.2-7
+Section: Tweaks
+Maintainer: H6nry <henry.anonym@gmail.com>
+Depends: mobilesubstrate
+Architecture: iphoneos-arm
+Filename: Files/adowngrader/org.h6nry.adowngrader_0.0.2-7_iphoneos-arm.deb
+Size: 53280
+Installed-Size: 304
+MD5sum: 814bfbfb309e70b575af5afe9e897e5d
+Description: Downgrade your apps. Well, at least try it.
+Name: Adowngrader
+Author: H6nry <henry.anonym@gmail.com>
+

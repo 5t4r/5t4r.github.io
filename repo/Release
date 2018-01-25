@@ -1,0 +1,8 @@
+Origin: neo's repo
+Label: neo's repo
+Suite: stable
+Version: 1.0
+Codename: neo
+Architectures: iphoneos-arm
+Components: main
+Description: neo's Cydia Repository
