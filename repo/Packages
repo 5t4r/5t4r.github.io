@@ -105,6 +105,20 @@ Description: An awesome tool of update!!
 Name: lzupdate
 Author: lz
 
+Package: com.nablac0d3.SSLKillSwitch2
+Version: 0.11-1+debug
+Section: Tweaks
+Maintainer: Alban Diquet <nabla.c0d3@gmail.com>
+Depends: mobilesubstrate, preferenceloader
+Architecture: iphoneos-arm
+Filename: Files//tools/com.nablac0d3.SSLKillSwitch2_0.11.deb
+Size: 7856
+Installed-Size: 128
+MD5sum: 13f6796e5a76394b22234c4037725929
+Description: Blackbox tool to disable SSL certificate validation - including certificate pinning - within iOS and OS X Apps.
+Name: SSL Kill Switch 2
+Author: Alban Diquet <nabla.c0d3@gmail.com>
+
 Package: com.officialscheduler.mterminal
 Version: 1.4-5
 Section: Utilities
