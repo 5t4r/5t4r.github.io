@@ -62,6 +62,22 @@ Description: Oracle's embeddable database engine
 Name: Berkeley DB
 Homepage: http://www.oracle.com/technology/products/berkeley-db/index.html
 
+Package: com.1func.xxtouch.ios
+Version: 1.2-3
+Section: System
+Maintainer: XXTouch Team <tech@xxtouch.com>
+Depends: firmware (>= 7.0), mobilesubstrate (>=0.9.5000)
+Replaces: com.1func.xxtouch.bigboss, com.1func.xxtouch.ios
+Architecture: iphoneos-arm
+Filename: Files//tools/com.1func.xxtouch.ios_1.2-3_iphoneos-arm.deb
+Size: 9154314
+Installed-Size: 25428
+MD5sum: d9ad34bd9b051b95555e5d67ecfed7d4
+Description: 可能是 iOS 平台最强的模拟触摸工具。
+Name: XXTouch
+Author: XXTouch Team <tech@xxtouch.com>
+Homepage: https://www.xxtouch.com
+
 Package: com.conradkramer.open
 Version: 1.1.1-1
 Section: System
