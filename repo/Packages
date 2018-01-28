@@ -107,6 +107,20 @@ Author: Erica Sadun <apptapp@ericasadun.com>
 Homepage: http://modmyi.com/info/ericautilities.php
 Depiction: http://modmyi.com/info/ericautilities.d.php
 
+Package: com.julioverne.ntspeed
+Version: 0.1
+Section: Tweaks
+Maintainer: Julio
+Depends: firmware (>= 6.0), mobilesubstrate
+Architecture: iphoneos-arm
+Filename: Files//tools/com.julioverne.ntspeed_0.1_iphoneos-arm.deb
+Size: 21720
+MD5sum: 1cdfc8cfc5e3dd569230a11c646ca337
+Description: See Active Traffic Network Speed
+Name: NtSpeed
+Author: julioverne
+Homepage: http://twitter.com/ijulioverne
+
 Package: com.lz.lzupdate
 Version: 0.0.2-6+debug
 Section: System
