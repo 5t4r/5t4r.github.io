@@ -15,6 +15,52 @@ Author: Ryan Petrich <rpetrich@gmail.com>
 Website: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=AppListDp
 Depiction: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=AppListDp
 
+Package: apr
+Version: 1.3.3-4
+Priority: optional
+Section: Development
+Maintainer: Jay Freeman (saurik) <saurik@saurik.com>
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: apr-lib
+Architecture: iphoneos-arm
+Filename: Files//bigboss_cmd/apr_1.3.3-4_iphoneos-arm.deb
+Size: 75032
+Installed-Size: 528
+MD5sum: 1a1aeb1b769f5d1a08fba69ce568c2c4
+Description: platform abstraction library from Apache
+Name: APR
+Homepage: http://apr.apache.org/
+
+Package: apr-lib
+Version: 1.3.3-2
+Priority: standard
+Section: Development
+Maintainer: Jay Freeman (saurik) <saurik@saurik.com>
+Pre-Depends: dpkg (>= 1.14.25-8)
+Replaces: apr (<< 1.3.3-4)
+Architecture: iphoneos-arm
+Filename: Files//bigboss_cmd/apr-lib_1.3.3-2_iphoneos-arm.deb
+Size: 63896
+Installed-Size: 176
+MD5sum: c1d3d00db4cd45a36f088b775501ed0b
+Description: just the /usr/lib folder from APR
+Name: APR (/usr/lib)
+Homepage: http://apr.apache.org/
+
+Package: apr-util
+Version: 1.2.12-5
+Priority: standard
+Section: Development
+Maintainer: Jay Freeman (saurik) <saurik@saurik.com>
+Depends: apr, berkeleydb, expat, sqlite3
+Architecture: iphoneos-arm
+Filename: Files//bigboss_cmd/apr-util_1.2.12-5_iphoneos-arm.deb
+Size: 102360
+Installed-Size: 436
+MD5sum: 95b5cb7865361c4f0b061e8bdf3df3e1
+Description: data structures and utilities for Apache APR
+Name: APR-util
+
 Package: apt
 Version: 1:0-23
 Priority: required
@@ -47,6 +93,18 @@ MD5sum: da65a91675bcde5f9174d8fb6e1669ed
 Description: the advanced packaging tool from Debian
 Name: APT 0.7 Strict
 
+Package: basic-cmds
+Version: 48-2p
+Priority: important
+Section: Utilities
+Maintainer: Jay Freeman (saurik) <saurik@saurik.com>
+Architecture: iphoneos-arm
+Filename: Files//bigboss_cmd/basic-cmds_48-2p_iphoneos-arm.deb
+Size: 12760
+Installed-Size: 92
+MD5sum: 44c4c09cd67d2f3e182018c6b9594fcd
+Description: msg, uudecode, uuencode, write
+
 Package: berkeleydb
 Version: 4.6.21-5
 Priority: standard
@@ -61,6 +119,48 @@ MD5sum: d5538a770babf6adeb6f637c640fbcee
 Description: Oracle's embeddable database engine
 Name: Berkeley DB
 Homepage: http://www.oracle.com/technology/products/berkeley-db/index.html
+
+Package: bigbosshackertools
+Version: 1.3.2-2
+Section: System
+Maintainer: BigBoss <bigboss@thebigboss.org>
+Depends: syslogcmdline, adv-cmds, apt, basic-cmds, bootstrap-cmds, bzip2, class-dump, coreutils, developer-cmds, diskdev-cmds, file-cmds, gawk, gdb, git, gzip, iokittools, less, make, nano, network-cmds, ldid, firmware (>= 10.0) | openssh, rsync, shell-cmds, system-cmds, com.ericasadun.utilities, top, uikittools, findutils, inetutils, diffutils, lsof, subversion, vim, xar, tar, patch, unrar, unzip, wget, whois, xml2, zip, p7zip
+Architecture: iphoneos-arm
+Filename: Files//bigboss_cmd/bigbosshackertools_1.3.2-2_iphoneos-arm.deb
+Size: 2598
+Installed-Size: 0
+MD5sum: 67d0c7dc71b8fb78928bcc6a53d8fcb7
+Description: Combined list of hacker tools. Cydia no longer comes preinstalled with most useful command line apps. This package installs most the missing ones in one swoop. There is no real package provided here. It is only a set of depends on other various tools so that your command line can become useful again.
+Name: BigBoss Recommended Tools
+Author: BigBoss <bigboss@thebigboss.org>
+
+Package: bootstrap-cmds
+Version: 60-3p
+Priority: optional
+Section: Development
+Maintainer: Jay Freeman (saurik) <saurik@saurik.com>
+Architecture: iphoneos-arm
+Filename: Files//bigboss_cmd/bootstrap-cmds_60-3p_iphoneos-arm.deb
+Size: 90050
+Installed-Size: 300
+MD5sum: ecc50631be5e6108838e61691d1d24bc
+Description: Mach interface and stub generator
+Name: Bootstrap Commands
+
+Package: class-dump
+Version: 3.1.2-x-1.0.1-2p
+Priority: optional
+Section: Development
+Maintainer: Jay Freeman (saurik) <saurik@saurik.com>
+Architecture: iphoneos-arm
+Filename: Files//bigboss_cmd/class-dump_3.1.2-x-1.0.1-2p_iphoneos-arm.deb
+Size: 82802
+Installed-Size: 308
+MD5sum: dcc4eab3ee52062c72fb6d876e277b99
+Description: reverse engineer Objective-C headers
+Name: Class Dump
+Homepage: http://iphone.freecoder.org/classdump_en.html
+Depiction: http://cydia.saurik.com/info/class-dump/
 
 Package: com.1func.xxtouch.ios
 Version: 1.2-3
@@ -98,7 +198,7 @@ Version: 1:0.4.2
 Section: Utilities
 Maintainer: Erica Sadun <apptapp@ericasadun.com>
 Architecture: iphoneos-arm
-Filename: Files//tools/com.ericasadun.utilities.deb
+Filename: Files//bigboss_cmd/com.ericasadun.utilities_1%3a0.4.2_iphoneos-arm.deb
 Size: 55410
 MD5sum: 89a3bb9791c2deee6f530773089ee43d
 Description: A collection of command-line utilities for various purposes.
@@ -248,6 +348,40 @@ Homepage: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=reveal2load
 Depiction: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=reveal2loaderDp
 Icon: file:///Library/PreferenceLoader/Preferences/reveal-logo@2x.png
 
+Package: coreutils
+Version: 8.12-13
+Priority: standard
+Section: Utilities
+Maintainer: Jay Freeman (saurik) <saurik@saurik.com>
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: bash, coreutils-bin (>= 7.4-5), profile.d
+Provides: md5sum, sha1sum
+Replaces: netatalk (<= 2.0.3-6)
+Architecture: iphoneos-arm
+Filename: Files//bigboss_cmd/coreutils_8.12-13_iphoneos-arm.deb
+Size: 633090
+Installed-Size: 8636
+MD5sum: 1e3acb73a0398435178d7cbeee0bd361
+Description: core set of Unix shell utilities from GNU
+Name: Core Utilities
+Homepage: http://www.gnu.org/software/coreutils/
+
+Package: curl
+Version: 7.33.0-9
+Priority: standard
+Section: Networking
+Maintainer: Jay Freeman (saurik) <saurik@saurik.com>
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: openssl
+Architecture: iphoneos-arm
+Filename: Files//bigboss_cmd/curl_7.33.0-9_iphoneos-arm.deb
+Size: 275848
+Installed-Size: 724
+MD5sum: 9555aec6ea41e0cdeb3aab0f84313eb1
+Description: flexible multi-protocol file transfers
+Name: cURL
+Homepage: http://curl.haxx.se/
+
 Package: cydia
 Version: 1.1.30
 Priority: required
@@ -269,6 +403,32 @@ Author: Jay Freeman (saurik) <saurik@saurik.com>
 Depiction: http://cydia.saurik.com/info/cydia/
 Icon: file:///Applications/Cydia.app/Icon-60.png
 
+Package: developer-cmds
+Version: 48-2p
+Priority: important
+Section: Development
+Maintainer: Jay Freeman (saurik) <saurik@saurik.com>
+Architecture: iphoneos-arm
+Filename: Files//bigboss_cmd/developer-cmds_48-2p_iphoneos-arm.deb
+Size: 82554
+Installed-Size: 288
+MD5sum: 75bd8a0d2917b16abe4305a275eb387b
+Description: ctags, error, hexdump, rpcgen, unifdef
+
+Package: diskdev-cmds
+Version: 421.7-4
+Priority: required
+Section: System
+Maintainer: Jay Freeman (saurik) <saurik@saurik.com>
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: firmware-sbin
+Architecture: iphoneos-arm
+Filename: Files//bigboss_cmd/diskdev-cmds_421.7-4_iphoneos-arm.deb
+Size: 114822
+Installed-Size: 848
+MD5sum: 2211d78fb6bede91ba9004aad776eacf
+Description: mount, quota, fsck, fstyp, fdisk, tunefs
+
 Package: dpkg
 Version: 1.18.10-12
 Priority: required
@@ -285,6 +445,127 @@ Description: package maintainance tools from Debian
 Name: Debian Packager
 Homepage: http://wiki.debian.org/Teams/Dpkg
 
+Package: expat
+Version: 2.0.1-3
+Priority: standard
+Section: Development
+Maintainer: Jay Freeman (saurik) <saurik@saurik.com>
+Pre-Depends: dpkg (>= 1.14.25-8)
+Architecture: iphoneos-arm
+Filename: Files//bigboss_cmd/expat_2.0.1-3_iphoneos-arm.deb
+Size: 69300
+Installed-Size: 268
+MD5sum: f5ab3de453c630dcba0639715e6722f7
+Description: stream-oriented XML parser written in C
+Name: XML Parser Toolkit
+
+Package: file-cmds
+Version: 220.7-3
+Priority: important
+Section: Utilities
+Maintainer: Jay Freeman (saurik) <saurik@saurik.com>
+Pre-Depends: dpkg (>= 1.14.25-8)
+Architecture: iphoneos-arm
+Filename: Files//bigboss_cmd/file-cmds_220.7-3_iphoneos-arm.deb
+Size: 57908
+Installed-Size: 296
+MD5sum: be33a80c9418b5ffc318bd0219b896c1
+Description: chflags, compress, ipcrm, ipcs, pax
+
+Package: gawk
+Version: 3.1.6-2p
+Priority: important
+Section: Utilities
+Maintainer: Jay Freeman (saurik) <saurik@saurik.com>
+Architecture: iphoneos-arm
+Filename: Files//bigboss_cmd/gawk_3.1.6-2p_iphoneos-arm.deb
+Size: 424026
+Installed-Size: 1232
+MD5sum: 654129a5cc3c445141ec4e06f592e7c4
+Description: GNU's heavy-weight implementation of awk
+Name: Gawk
+
+Package: gdb
+Version: 1518-12
+Priority: optional
+Section: Development
+Maintainer: Jay Freeman (saurik) <saurik@saurik.com>
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: ncurses, readline, sqlite3
+Architecture: iphoneos-arm
+Filename: Files//bigboss_cmd/gdb_1518-12_iphoneos-arm.deb
+Size: 3585014
+Installed-Size: 32180
+MD5sum: fd441ed5aa6faaf7efc2ff9d34fd9ffe
+Description: debugger for native software
+ A debugger for native software from GNU. This is Apple's Open Source 
+ GDB that targets ARM. It still has some limitations, but they are being 
+ worked on.
+Name: GNU Debugger
+Homepage: http://www.gnu.org/software/gdb/
+Depiction: http://cydia.saurik.com/info/gdb/
+
+Package: gettext
+Version: 0.17-7
+Priority: optional
+Section: System
+Maintainer: Jay Freeman (saurik) <saurik@saurik.com>
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: ncurses
+Architecture: iphoneos-arm
+Filename: Files//bigboss_cmd/gettext_0.17-7_iphoneos-arm.deb
+Size: 768352
+Installed-Size: 3336
+MD5sum: 9e48b67c077de8eff4ab17e2008a157a
+Description: internationalization helper for strings
+Homepage: http://www.gnu.org/software/gettext/
+
+Package: git
+Version: 2.8.1-5
+Priority: optional
+Section: Data_Storage
+Maintainer: Jay Freeman (saurik) <saurik@saurik.com>
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: curl, expat, openssl
+Architecture: iphoneos-arm
+Filename: Files//bigboss_cmd/git_2.8.1-5_iphoneos-arm.deb
+Size: 2719904
+Installed-Size: 19628
+MD5sum: 5e534ce9dc014bc8de4db2fda999a0e2
+Description: fast content-addressable filesystem
+Name: Git
+
+Package: inetutils
+Version: 1.6-8
+Priority: standard
+Section: Networking
+Maintainer: Jay Freeman (saurik) <saurik@saurik.com>
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: ncurses
+Provides: hostname, ping, telnet
+Replaces: coreutils (<< 7.2-6)
+Architecture: iphoneos-arm
+Filename: Files//bigboss_cmd/inetutils_1.6-8_iphoneos-arm.deb
+Size: 211610
+Installed-Size: 868
+MD5sum: beeb089a2c52ac9de868a90253e26fbe
+Description: ftp, inetd, ping, rlogin, telnet, tftp
+Homepage: http://www.gnu.org/software/inetutils/
+
+Package: iokittools
+Version: 76-4p
+Priority: important
+Section: Administration
+Maintainer: Jay Freeman (saurik) <saurik@saurik.com>
+Depends: ncurses
+Architecture: iphoneos-arm
+Filename: Files//bigboss_cmd/iokittools_76-4p_iphoneos-arm.deb
+Size: 15604
+Installed-Size: 84
+MD5sum: 21a2a55c16af71c5c54f309d87d916e1
+Description: ioalloccount, ioclasscount, ioreg
+Name: IOKit Tools
+
 Package: jetslammed
 Version: 1.2
 Section: Utilities
@@ -298,6 +579,81 @@ Description: Library for modifying jetsam memory limits per process
 Name: Jetslammed
 Author: Mario Ciabarra <https://github.com/mariociabarra/jetslammed>
 Depiction: http://modmyi.com/info/jetslammed.d.php
+
+Package: less
+Version: 418-3
+Priority: important
+Section: Utilities
+Maintainer: Jay Freeman (saurik) <saurik@saurik.com>
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: ncurses
+Provides: more
+Replaces: system-cmds (<= 433.4-11)
+Architecture: iphoneos-arm
+Filename: Files//bigboss_cmd/less_418-3_iphoneos-arm.deb
+Size: 69864
+Installed-Size: 208
+MD5sum: 04686744ed6fc8480dc88f505b841daf
+Description: provides less information than more does
+
+Package: libxml2
+Version: 2.6.32-7
+Priority: standard
+Section: Development
+Maintainer: Jay Freeman (saurik) <saurik@saurik.com>
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: libxml2-lib
+Architecture: iphoneos-arm
+Filename: Files//bigboss_cmd/libxml2_2.6.32-7_iphoneos-arm.deb
+Size: 90670
+Installed-Size: 712
+MD5sum: 7801397e3e3f3a70e08ccabb483fc2bb
+Description: very popular XML parser from Gnome
+Name: libxml2
+Homepage: http://xmlsoft.org/
+Depiction: http://cydia.saurik.com/info/libxml2/
+
+Package: libxml2-lib
+Version: 2.6.32-3
+Priority: standard
+Section: Development
+Maintainer: Jay Freeman (saurik) <saurik@saurik.com>
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: firmware (>= 3.0) | libxml2-dylib
+Replaces: libxml2 (<= 2.6.32-5)
+Architecture: iphoneos-arm
+Filename: Files//bigboss_cmd/libxml2-lib_2.6.32-3_iphoneos-arm.deb
+Size: 1218
+Installed-Size: 24
+MD5sum: 5bf3e512c63f8452dc41dee9eefc79eb
+Description: represents the library for libxml2
+Name: libxml2 Library
+
+Package: lsof
+Version: 33-4p
+Priority: standard
+Section: Administration
+Maintainer: Jay Freeman (saurik) <saurik@saurik.com>
+Depends: ncurses
+Architecture: iphoneos-arm
+Filename: Files//bigboss_cmd/lsof_33-4p_iphoneos-arm.deb
+Size: 50122
+Installed-Size: 136
+MD5sum: 87a5eb01a2321a1b37b0ee3ccbd78533
+Description: shows what files programs have open
+
+Package: make
+Version: 3.81-2p
+Priority: important
+Section: Development
+Maintainer: Jay Freeman (saurik) <saurik@saurik.com>
+Architecture: iphoneos-arm
+Filename: Files//bigboss_cmd/make_3.81-2p_iphoneos-arm.deb
+Size: 102266
+Installed-Size: 216
+MD5sum: 1002f166b7ba96a5a00688af80d77a9e
+Description: dependency-based build environments
+Name: Make
 
 Package: mobilesubstrate
 Version: 0.9.6301
@@ -316,6 +672,34 @@ Description: powerful code insertion platform
 Name: Cydia Substrate
 Author: Jay Freeman (saurik) <saurik@saurik.com>
 Depiction: http://cydia.saurik.com/info/mobilesubstrate/
+
+Package: nano
+Version: 2.2.6-6
+Priority: standard
+Section: Text_Editors
+Maintainer: Jay Freeman (saurik) <saurik@saurik.com>
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: ncurses
+Architecture: iphoneos-arm
+Filename: Files//bigboss_cmd/nano_2.2.6-6_iphoneos-arm.deb
+Size: 93090
+Installed-Size: 380
+MD5sum: fa46db041e78ef2c316ae8b1c404dddc
+Description: completely free, modern clone of Pico
+
+Package: neon
+Version: 0.26.4-4
+Priority: standard
+Section: Networking
+Maintainer: Jay Freeman (saurik) <saurik@saurik.com>
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: expat, openssl
+Architecture: iphoneos-arm
+Filename: Files//bigboss_cmd/neon_0.26.4-4_iphoneos-arm.deb
+Size: 68158
+Installed-Size: 304
+MD5sum: 59c7b92a01f1b6da8f17d94f03a30c1b
+Description: HTTP and WebDAV client library
 
 Package: openssh
 Version: 6.7p1-13
@@ -378,6 +762,18 @@ Author: qpiu <qpiu.qpiu@gmail.com>
 Homepage: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=wifiutilDp
 Depiction: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=wifiutilDp
 
+Package: patch
+Version: 2.5.4-3p
+Priority: important
+Section: Development
+Maintainer: Jay Freeman (saurik) <saurik@saurik.com>
+Architecture: iphoneos-arm
+Filename: Files//bigboss_cmd/patch_2.5.4-3p_iphoneos-arm.deb
+Size: 56524
+Installed-Size: 132
+MD5sum: df4c043878345cf2d7c6f0c42e2e0428
+Description: merge a difference onto a file
+
 Package: preferenceloader
 Version: 2.2.3-3
 Section: System
@@ -393,6 +789,78 @@ Name: PreferenceLoader
 Author: Dustin Howett <cydia.pl@relay.howett.net>
 Homepage: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=preferenceloader2Data
 Depiction: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=preferenceloader2Data
+
+Package: rsync
+Version: 3.0.5-3
+Priority: important
+Section: Networking
+Maintainer: Jay Freeman (saurik) <saurik@saurik.com>
+Pre-Depends: dpkg (>= 1.14.25-8)
+Architecture: iphoneos-arm
+Filename: Files//bigboss_cmd/rsync_3.0.5-3_iphoneos-arm.deb
+Size: 206344
+Installed-Size: 532
+MD5sum: 207a1e0e8022d0724accc1dc6483d182
+Description: synchronize files between computers
+Homepage: http://www.samba.org/rsync/
+
+Package: sqlite3
+Version: 3.5.9-13
+Priority: standard
+Section: Data_Storage
+Maintainer: Jay Freeman (saurik) <saurik@saurik.com>
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: sqlite3-lib
+Replaces: sqlite3 (<= 3.5.9-11)
+Architecture: iphoneos-arm
+Filename: Files//bigboss_cmd/sqlite3_3.5.9-13_iphoneos-arm.deb
+Size: 72400
+Installed-Size: 384
+MD5sum: cc7a5edf1ee34c7016fb1c07ba542381
+Description: embedded database used by iPhoneOS
+Name: SQLite 3.x
+
+Package: sqlite3-lib
+Version: 3.5.9-2
+Priority: standard
+Section: Data_Storage
+Maintainer: Jay Freeman (saurik) <saurik@saurik.com>
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: firmware (>= 3.0) | sqlite3-dylib
+Architecture: iphoneos-arm
+Filename: Files//bigboss_cmd/sqlite3-lib_3.5.9-2_iphoneos-arm.deb
+Size: 686
+Installed-Size: 12
+MD5sum: 3d5fa2f07bc0d8da5406e771c62bed94
+Description: represents the library for SQLite
+Name: SQLite 3.x Library
+
+Package: subversion
+Version: 1.4.6-2p
+Priority: standard
+Section: Data_Storage
+Maintainer: Jay Freeman (saurik) <saurik@saurik.com>
+Depends: apr, apr-util, expat, neon
+Architecture: iphoneos-arm
+Filename: Files//bigboss_cmd/subversion_1.4.6-2p_iphoneos-arm.deb
+Size: 820962
+Installed-Size: 2608
+MD5sum: 441312826a7493a06172d2c2deedb870
+Description: modern version control system
+Name: Subversion
+
+Package: syslogcmdline
+Version: 1.0
+Section: System
+Maintainer: BigBoss <bigboss@thebigboss.org>
+Architecture: iphoneos-arm
+Filename: Files//bigboss_cmd/syslogcmdline_1.0_iphoneos-arm.deb
+Size: 3314
+Installed-Size: 25
+MD5sum: 4c85f32518e38e3c6ed6a9293cab6e32
+Description: Enable/disable syslog via cmd line. syslogon to enable, syslogoff to disable. Log to /var/log/syslog
+Name: Syslog Commandline
+Author: BigBoss <bigboss@thebigboss.org>
 
 Package: tar
 Version: 1.29-10
@@ -417,7 +885,7 @@ Maintainer: Jay Freeman (saurik) <saurik@saurik.com>
 Pre-Depends: dpkg (>= 1.14.25-8)
 Depends: ncurses
 Architecture: iphoneos-arm
-Filename: Files//date/top.deb
+Filename: Files//bigboss_cmd/top_39-4_iphoneos-arm.deb
 Size: 112174
 Installed-Size: 804
 MD5sum: 840a1f34e5d58f8da8b1af28159cf36a
@@ -430,10 +898,64 @@ Section: Text_Editors
 Maintainer: Jay Freeman (saurik) <saurik@saurik.com>
 Depends: ncurses
 Architecture: iphoneos-arm
-Filename: Files//tools/vim.deb
+Filename: Files//bigboss_cmd/vim_7.1-3p_iphoneos-arm.deb
 Size: 6360714
 Installed-Size: 20876
 MD5sum: 0196c5c8759cd6ab26a38b9264d3be72
 Description: the best syntax highlighter, ever
 Name: Vi IMproved
+
+Package: wget
+Version: 1.16-4
+Priority: important
+Section: Networking
+Maintainer: Jay Freeman (saurik) <saurik@saurik.com>
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: gettext, openssl
+Architecture: iphoneos-arm
+Filename: Files//bigboss_cmd/wget_1.16-4_iphoneos-arm.deb
+Size: 210290
+Installed-Size: 480
+MD5sum: 9221072b359a2c526e0f07467d30cc10
+Description: simple HTTP file transfer client
+
+Package: whois
+Version: 4.7.24-2p
+Priority: important
+Section: Networking
+Maintainer: Jay Freeman (saurik) <saurik@saurik.com>
+Architecture: iphoneos-arm
+Filename: Files//bigboss_cmd/whois_4.7.24-2p_iphoneos-arm.deb
+Size: 15684
+Installed-Size: 56
+MD5sum: bc885fb6a1281199788cb7dc82707353
+Description: client for querying whois servers
+
+Package: xar
+Version: 1.5.2-1p
+Priority: optional
+Section: Archiving
+Maintainer: Jay Freeman (saurik) <saurik@saurik.com>
+Depends: libxml2, openssl
+Architecture: iphoneos-arm
+Filename: Files//bigboss_cmd/xar_1.5.2-1p_iphoneos-arm.deb
+Size: 194580
+Installed-Size: 684
+MD5sum: 7d91e26c33129a131324c60e015572f2
+Description: easily extensible archive format
+Name: XAR
+Homepage: http://code.google.com/p/xar/
+
+Package: xml2
+Version: 0.2-3p
+Priority: optional
+Section: Utilities
+Maintainer: Jay Freeman (saurik) <saurik@saurik.com>
+Depends: libxml2
+Architecture: iphoneos-arm
+Filename: Files//bigboss_cmd/xml2_0.2-3p_iphoneos-arm.deb
+Size: 9542
+Installed-Size: 68
+MD5sum: 5f60cbcafeeb6fc4c66c8503ebe9d976
+Description: simple tools to help grep xml
 
