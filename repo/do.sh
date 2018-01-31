@@ -1,6 +1,6 @@
 #!/bin/sh
 
-find . -name .DS_Store | xargx rm -f
+find . -name .DS_Store | xargs rm -f
 
 #To make Packages on iPhone do:
 rm -f Packages
