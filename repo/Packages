@@ -1,3 +1,18 @@
+Package: adv-cmds
+Version: 119-6
+Priority: important
+Section: Administration
+Maintainer: Jay Freeman (saurik) <saurik@saurik.com>
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: ncurses
+Provides: ps
+Architecture: iphoneos-arm
+Filename: Files//cycript/adv-cmds_119-6_iphoneos-arm.deb
+Size: 62804
+Installed-Size: 536
+MD5sum: fb4a7c239d1089eee056df930a61718c
+Description: finger, fingerd, last, lsvfs, md, ps
+
 Package: applist
 Version: 1.5.13
 Section: System
@@ -381,6 +396,22 @@ MD5sum: 9555aec6ea41e0cdeb3aab0f84313eb1
 Description: flexible multi-protocol file transfers
 Name: cURL
 Homepage: http://curl.haxx.se/
+
+Package: cycript
+Version: 0.9.594
+Priority: optional
+Section: Development
+Maintainer: Jay Freeman (saurik) <saurik@saurik.com>
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: readline, adv-cmds, mobilesubstrate (>= 0.9.6300)
+Architecture: iphoneos-arm
+Filename: Files//cycript/cycript_0.9.594_iphoneos-arm.deb
+Size: 1225008
+MD5sum: cb2d5d1a2806e5da8d2d80c767b0cd36
+Description: runtime execution server and disassembler
+Name: Cycript
+Author: Jay Freeman (saurik) <saurik@saurik.com>
+Depiction: http://cydia.saurik.com/info/cycript/
 
 Package: cydia
 Version: 1.1.30
