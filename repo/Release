@@ -1,8 +1,8 @@
-Origin: neo's repo
-Label: neo's repo
+Origin: 5t4r's repo
+Label: 5t4r's repo
 Suite: stable
 Version: 1.0
-Codename: neo
+Codename: 5t4r
 Architectures: iphoneos-arm
 Components: main
-Description: neo's Cydia Repository
+Description: 5t4r's Repository
