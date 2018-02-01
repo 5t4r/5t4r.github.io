@@ -3,12 +3,12 @@
 find . -name .DS_Store | xargs rm -f
 
 #To make Packages on iPhone do:
-# rm -f Packages
-# ./dpkg-scanpackages Files /dev/null > Packages
+rm -f Packages
+./dpkg-scanpackages Files /dev/null > Packages
 
 # read -p "pause"
 #To make .gz and .bz2:
-# rm Packages
+rm Packages
 rm -f Packages.gz
 rm -f Packages.bz2
 gzip -c9 Packages > Packages.gz
