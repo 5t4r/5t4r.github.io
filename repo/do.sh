@@ -8,7 +8,7 @@ rm -f Packages
 
 # read -p "pause"
 #To make .gz and .bz2:
-rm Packages
+
 rm -f Packages.gz
 rm -f Packages.bz2
 gzip -c9 Packages > Packages.gz
