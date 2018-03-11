@@ -1,8 +1,10 @@
-Origin: 5t4r's repo
-Label: 5t4r's repo
+Origin: star's Repo
+Label: star
 Suite: stable
 Version: 1.0
-Codename: 5t4r
-Architectures: iphoneos-arm
+Codename: star
+Architecture: iphoneos-arm
 Components: main
-Description: 5t4r's Repository
+Description: star's Tweaks
+MD5Sum:
+ d41d8cd98f00b204e9800998ecf8427e 16777221
